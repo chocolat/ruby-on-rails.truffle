@@ -1,0 +1,8 @@
+(name [params[…]])
+
+(trigger
+    (key [[ctrl]P]))
+
+(only-in source.ruby.rails)
+
+(snippet [params[:%{1="id"}]])

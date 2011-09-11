@@ -1,0 +1,8 @@
+(name [render (nothing)])
+
+(trigger
+    (tab rn))
+
+(only-in source.ruby.rails)
+
+(snippet [render :nothing => %{1="true"}])

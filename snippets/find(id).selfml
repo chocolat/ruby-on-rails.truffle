@@ -1,0 +1,8 @@
+(name [find(id)])
+
+(trigger
+    (tab fini))
+
+(only-in source.ruby.rails)
+
+(snippet [find(%{1="id"})])

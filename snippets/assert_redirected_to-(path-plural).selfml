@@ -1,0 +1,8 @@
+(name [assert_redirected_to (path plural)])
+
+(trigger
+    (tab artpp))
+
+(only-in source.ruby.rails)
+
+(snippet [assert_redirected_to %{10="%{2="model"}s_path"}])

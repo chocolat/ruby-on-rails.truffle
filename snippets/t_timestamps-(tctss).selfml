@@ -1,0 +1,9 @@
+(name [t.timestamps (tctss)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.timestamps
+t.%{0}])

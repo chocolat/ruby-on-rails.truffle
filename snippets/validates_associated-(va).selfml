@@ -1,0 +1,8 @@
+(name validates_associated)
+
+(trigger
+    (tab va))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_associated :%{1="attribute"}%{2=", :on => :%{3="create"}"}])

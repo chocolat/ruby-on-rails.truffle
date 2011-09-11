@@ -1,0 +1,8 @@
+(name assert_response)
+
+(trigger
+    (tab asre))
+
+(only-in source.ruby.rails)
+
+(snippet [assert_response :%{1="success"}, @response.body%{0}])

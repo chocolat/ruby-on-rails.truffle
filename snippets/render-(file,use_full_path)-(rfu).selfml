@@ -1,0 +1,8 @@
+(name [render (file, use_full_path)])
+
+(trigger
+    (tab rfu))
+
+(only-in source.ruby.rails)
+
+(snippet [render :file => "%{1="filepath"}", :use_full_path => %{2="false"}])

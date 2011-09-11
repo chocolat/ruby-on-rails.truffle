@@ -1,0 +1,8 @@
+(name [f.hidden_field (ffhf)])
+
+(trigger
+    (tab f.))
+
+(only-in [text.html.ruby, text.haml])
+
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.hidden_field :%{1="attribute"}%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}])

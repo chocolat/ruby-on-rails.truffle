@@ -1,0 +1,22 @@
+(root text.html.ruby
+    (zone comment.block.erb
+        (start
+            (regex [<%+#]
+                (0 punctuation.definition.comment.erb)))
+        (end
+            (regex %>
+                (0 punctuation.definition.comment.erb))))
+    (zone source.ruby.rails.embedded.html
+        (start
+            (regex [<%+(?!>)[-=]?]
+                (0 punctuation.section.embedded.ruby)))
+        (end
+            (regex -?%>
+                (0 punctuation.section.embedded.ruby)))
+        (subzones
+            (zone comment.line.number-sign.ruby
+                (match
+                    (regex [(#).*?(?=-?%>)]
+                        (1 punctuation.definition.comment.ruby))))
+            (include source.ruby.rails)))
+    (include text.html.basic))

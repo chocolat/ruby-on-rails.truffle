@@ -1,0 +1,8 @@
+(name [page.visual_effect (effect, id)])
+
+(trigger
+    (tab vis))
+
+(only-in source.ruby.rails.rjs)
+
+(snippet [page.visual_effect :%{1="toggle_slide"}, %{2=""%{3="DOM ID"}""}])

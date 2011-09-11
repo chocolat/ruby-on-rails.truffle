@@ -1,0 +1,8 @@
+(name assert_redirected_to)
+
+(trigger
+    (tab art))
+
+(only-in source.ruby.rails)
+
+(snippet [assert_redirected_to %{2=":action => "%{1="index"}""}])

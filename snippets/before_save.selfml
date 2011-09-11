@@ -1,0 +1,8 @@
+(name before_save)
+
+(trigger
+    (tab befs))
+
+(only-in source.ruby.rails)
+
+(snippet [before_save ])

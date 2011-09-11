@@ -1,0 +1,8 @@
+(name $LABEL)
+
+(trigger
+    (tab $L))
+
+(only-in source.yaml)
+
+(snippet $LABEL)

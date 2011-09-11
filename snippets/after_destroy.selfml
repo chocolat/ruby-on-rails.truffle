@@ -1,0 +1,8 @@
+(name after_destroy)
+
+(trigger
+    (tab aftd))
+
+(only-in source.ruby.rails)
+
+(snippet [after_destroy ])

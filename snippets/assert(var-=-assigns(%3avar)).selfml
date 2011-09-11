@@ -1,0 +1,9 @@
+(name [assert(var = assigns(:var))])
+
+(trigger
+    (tab asg))
+
+(only-in source.ruby)
+
+(snippet [assert(%{1="var"} = assigns(:%{1}), "Cannot find @%{1}")
+%{0}])

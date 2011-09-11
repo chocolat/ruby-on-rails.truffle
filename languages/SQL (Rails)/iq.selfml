@@ -1,0 +1,23 @@
+(detector
+    (extension erbsql)
+    (extension sql.erb))
+
+(folding
+    (start [\s*\(\s*$])
+    (stop [^\s*\)]))
+
+(in text.html.ruby
+    (shell-variables
+        (TM_RAILS_TEMPLATE_START_RUBY_EXPR [<%= ])
+        (TM_RAILS_TEMPLATE_END_RUBY_EXPR [ %>])
+        (TM_RAILS_TEMPLATE_START_RUBY_INLINE [<% ])
+        (TM_RAILS_TEMPLATE_END_RUBY_INLINE [ -%>])
+        (TM_RAILS_TEMPLATE_END_RUBY_BLOCK [<% end -%>])))
+
+(in text.haml
+    (shell-variables
+        (TM_RAILS_TEMPLATE_START_RUBY_EXPR [= ])
+        (TM_RAILS_TEMPLATE_END_RUBY_EXPR [])
+        (TM_RAILS_TEMPLATE_START_RUBY_INLINE [- ])
+        (TM_RAILS_TEMPLATE_END_RUBY_INLINE [])
+        (TM_RAILS_TEMPLATE_END_RUBY_BLOCK [])))

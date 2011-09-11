@@ -1,0 +1,8 @@
+(name [render (text, status)])
+
+(trigger
+    (tab rts))
+
+(only-in source.ruby.rails)
+
+(snippet [render :text => "%{1="text to render..."}", :status => %{2="401"}])

@@ -1,0 +1,8 @@
+(name [<%= Fixtures.identify(:symbol) %>])
+
+(trigger
+    (tab fi))
+
+(only-in source.yaml)
+
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_EXPR}Fixtures.identify(:%{1="name"})%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}%{0}])

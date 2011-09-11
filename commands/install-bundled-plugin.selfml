@@ -1,0 +1,15 @@
+(trigger
+    (key [[ctrl][shift]|]))
+
+(name [Install Plugin])
+
+(only-in [source.ruby.rails, source.yaml])
+
+(input nothing)
+
+(output html)
+
+(save nothing)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/list_plugins.rb"])

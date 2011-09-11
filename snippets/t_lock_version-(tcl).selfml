@@ -1,0 +1,9 @@
+(name [t.lock_version (tcl)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.integer :lock_version, :null => false, :default => 0
+t.%{0}])

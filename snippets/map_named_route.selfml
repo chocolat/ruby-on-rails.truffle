@@ -1,0 +1,8 @@
+(name map.named_route)
+
+(trigger
+    (tab map))
+
+(only-in meta.rails.routes)
+
+(snippet [%{1="map"}.%{2="connect"} '%{3=":controller/:action/:id"}'])

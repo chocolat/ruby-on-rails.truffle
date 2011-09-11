@@ -1,0 +1,31 @@
+(detector
+    (extension rhtml)
+    (extension erb)
+    (extension html.erb))
+
+(folding
+    (start [(?x)
+		(<(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?>
+		|<!--(?!.*-->)
+		|\{\s*($|\?>\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+		)])
+    (stop [(?x)
+		(</(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)>
+		|^\s*-->
+		|(^|\s)\}
+		)]))
+
+(shell-variables
+    (TM_RAILS_TEMPLATE_START_RUBY_EXPR [<%= ])
+    (TM_RAILS_TEMPLATE_END_RUBY_EXPR [ %>])
+    (TM_RAILS_TEMPLATE_START_RUBY_INLINE [<% ])
+    (TM_RAILS_TEMPLATE_END_RUBY_INLINE [ -%>])
+    (TM_RAILS_TEMPLATE_END_RUBY_BLOCK [<% end -%>]))
+
+(in text.haml
+    (shell-variables
+        (TM_RAILS_TEMPLATE_START_RUBY_EXPR [= ])
+        (TM_RAILS_TEMPLATE_END_RUBY_EXPR [])
+        (TM_RAILS_TEMPLATE_START_RUBY_INLINE [- ])
+        (TM_RAILS_TEMPLATE_END_RUBY_INLINE [])
+        (TM_RAILS_TEMPLATE_END_RUBY_BLOCK [])))

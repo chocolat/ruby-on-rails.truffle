@@ -1,0 +1,16 @@
+(trigger
+    (key [[ctrl][shift]|]))
+
+(name [Migrate to Current])
+
+(only-in [source.ruby.rails, source.yaml])
+
+(input nothing)
+
+(output html)
+
+(save nothing)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/rake_helper.rb" db:migrate
+])

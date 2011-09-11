@@ -1,0 +1,8 @@
+(name [link_to (action, id)])
+
+(trigger
+    (tab liai))
+
+(only-in [text.html.ruby, text.haml])
+
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "%{1="link text..."}", :action => "%{2="edit"}", :id => %{3="@item"}%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}])

@@ -1,0 +1,8 @@
+(name [f.label (ffl)])
+
+(trigger
+    (tab f.))
+
+(only-in [text.html.ruby, text.haml])
+
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.label :%{1="attribute"}%{2=", "%{3="%{1/[[:alpha:]]+|(_)/(?1: :\u$0)/g}"}""}%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}])

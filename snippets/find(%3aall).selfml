@@ -1,0 +1,8 @@
+(name [find(:all)])
+
+(trigger
+    (tab fina))
+
+(only-in source.ruby.rails)
+
+(snippet [find(:all%{1=", :conditions => ['%{2="%{3="field"} = ?"}', %{5="true"}]"})])

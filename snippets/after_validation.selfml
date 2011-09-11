@@ -1,0 +1,8 @@
+(name after_validation)
+
+(trigger
+    (tab aftv))
+
+(only-in source.ruby.rails)
+
+(snippet [after_validation ])

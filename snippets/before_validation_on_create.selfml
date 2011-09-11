@@ -1,0 +1,8 @@
+(name before_validation_on_create)
+
+(trigger
+    (tab befvoc))
+
+(only-in source.ruby.rails)
+
+(snippet [before_validation_on_create ])

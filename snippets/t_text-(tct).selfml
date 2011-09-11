@@ -1,0 +1,9 @@
+(name [t.text (tct)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.text :%{1="title"}
+t.%{0}])

@@ -1,0 +1,8 @@
+(name validates_uniqueness_of)
+
+(trigger
+    (tab vu))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_uniqueness_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => "%{4="must be unique"}""}])

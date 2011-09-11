@@ -1,0 +1,10 @@
+(name map.resources)
+
+(trigger
+    (tab maprs))
+
+(only-in meta.rails.routes)
+
+(snippet [%{1="map"}.resources :%{2="resource"}%{10=" do |%{11="%{2}"}|
+  %{0}
+end"}])

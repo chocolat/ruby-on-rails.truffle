@@ -1,0 +1,8 @@
+(name after_save)
+
+(trigger
+    (tab afts))
+
+(only-in source.ruby.rails)
+
+(snippet [after_save ])

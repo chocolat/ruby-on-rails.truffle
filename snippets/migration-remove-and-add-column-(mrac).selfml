@@ -1,0 +1,8 @@
+(name [Remove / Add Column])
+
+(trigger
+    (tab mcol))
+
+(only-in [meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table])
+
+(snippet [remove_column :%{1="table"}, :%{2="column"}%{3=" [press tab twice to generate add_column]"}])

@@ -1,0 +1,8 @@
+(name [render (file)])
+
+(trigger
+    (tab rf))
+
+(only-in source.ruby.rails)
+
+(snippet [render :file => "%{1="filepath"}"])

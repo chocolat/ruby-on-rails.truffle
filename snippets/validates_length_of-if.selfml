@@ -1,0 +1,8 @@
+(name [validates_length_of if])
+
+(trigger
+    (tab vlif))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_length_of :%{1="attribute"}, :within => %{2="3..20"}%{3=", :on => :%{4="create"}, :message => "%{5="must be present"}""}, :if => proc { |obj| %{6="obj.condition?"} }}])

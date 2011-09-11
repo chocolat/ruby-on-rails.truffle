@@ -1,0 +1,8 @@
+(name [validates_associated if])
+
+(trigger
+    (tab vaif))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_associated :%{1="attribute"}%{2=", :on => :%{3="create"}, :if => proc { |obj| %{5="obj.condition?"} "}}])

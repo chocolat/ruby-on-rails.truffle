@@ -1,0 +1,8 @@
+(name [redirect_to (action)])
+
+(trigger
+    (tab rea))
+
+(only-in source.ruby.rails)
+
+(snippet [redirect_to :action => "%{1="index"}"])

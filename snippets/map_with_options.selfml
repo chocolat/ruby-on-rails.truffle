@@ -1,0 +1,11 @@
+(name map.with_options)
+
+(trigger
+    (tab mapwo))
+
+(only-in meta.rails.routes)
+
+(snippet [%{1="map"}.with_options :%{2="controller"} => '%{3="thing"}' do |%{4="%{3}"}|
+	%{0}
+end
+])

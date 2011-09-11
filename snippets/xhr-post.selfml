@@ -1,0 +1,8 @@
+(name [xhr post])
+
+(trigger
+    (tab xpost))
+
+(only-in source.ruby.rails)
+
+(snippet [xhr :post, :%{1="create"}, :%{2="object"} => { %{3} }])

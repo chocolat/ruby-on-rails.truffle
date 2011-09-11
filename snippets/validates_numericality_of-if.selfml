@@ -1,0 +1,8 @@
+(name [validates_numericality_of if])
+
+(trigger
+    (tab vnif))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_numericality_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => "%{4="is not a number"}""}, :if => proc { |obj| %{5="obj.condition?"} }}])

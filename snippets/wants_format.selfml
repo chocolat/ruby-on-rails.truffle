@@ -1,0 +1,8 @@
+(name wants.format)
+
+(trigger
+    (tab wants))
+
+(only-in meta.rails.controller)
+
+(snippet [wants.%{1="js|xml|html"}%{2=" { %{0} \"}}])

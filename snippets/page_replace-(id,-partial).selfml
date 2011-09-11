@@ -1,0 +1,8 @@
+(name [page.replace (id, partial)])
+
+(trigger
+    (tab rep))
+
+(only-in source.ruby.rails.rjs)
+
+(snippet [page.replace %{1=""%{2="id"}""}, :%{3="partial => "%{4="template"}""}])

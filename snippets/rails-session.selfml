@@ -1,0 +1,8 @@
+(name [session[…]])
+
+(trigger
+    (key [[ctrl]J]))
+
+(only-in source.ruby.rails)
+
+(snippet [session[:%{1="user"}]])

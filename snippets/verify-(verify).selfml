@@ -1,0 +1,9 @@
+(name [verify — render])
+
+(trigger
+    (tab verify))
+
+(only-in source.ruby.rails)
+
+(snippet [verify :only => [:%{1}], :method => :post, :render => {:status => 500, :text => "use HTTP-POST"}
+])

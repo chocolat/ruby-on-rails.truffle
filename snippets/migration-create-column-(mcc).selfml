@@ -1,0 +1,9 @@
+(name [Create Column in Table])
+
+(trigger
+    (tab mcol))
+
+(only-in meta.rails.migration.create_table)
+
+(snippet [t.column %{1="title"}, :%{2="string"}
+%{0}])

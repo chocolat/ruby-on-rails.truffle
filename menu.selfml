@@ -1,0 +1,67 @@
+(menu
+    (submenu [Go To] command.go-to-file command.go-to-file-on-this-line --- command.go-to-model command.go-to-alternate-file command.go-to-view command.go-to-functional-test command.go-to-helper command.go-to-javascript command.go-to-stylesheet command.go-to-unit-test command.go-to-fixture)
+    (submenu [Run Tests] command.test-all command.test-functionals command.test-integration command.test-plugins command.test-recent command.test-uncommitted command.test-units)
+    command.generate
+    command.install-bundled-plugin
+    (submenu Database command.rake-migrate command.rake-migrate-to-version command.migrate-to-previous-version command.redo-last-migration --- command.load-fixtures [command.load-fixtures-(test-db)] --- command.db-schema-import command.db-schema-dump command.clone-development-db-to-test-db)
+    ---
+    snippet.rails-params
+    snippet.rails-session
+    (submenu Logger snippet.logger_debug snippet.logger_info snippet.logger_warn snippet.logger_error snippet.logger_fatal [snippet.rails_default_logger.debug-(rdb)])
+    ---
+    (submenu Models
+        command.show-db-schema
+        ---
+        (submenu Callbacks snippet.before_validation snippet.before_validation_on_create snippet.before_validation_on_update snippet.after_validation snippet.after_validation_on_create snippet.after_validation_on_update snippet.before_save snippet.after_save snippet.before_create snippet.after_create snippet.before_destroy snippet.after_update snippet.before_update snippet.after_destroy)
+        (submenu Associations [snippet.belongs_to-(bt)] [snippet.has_and_belongs_to_many-(habtm)] [snippet.has_one-(ho)] [snippet.has_many-(hm)] snippet.has_many-dependent-=>-destroy [snippet.has_many-(through)] snippet.has_many-dependent-=>-destroy)
+        (submenu Scopes snippet.named_scope snippet.named_scope-lambda)
+        (submenu Finders [snippet.find(id)] [snippet.find(%3aall)] [snippet.find(%3afirst)])
+        (submenu Validations snippet.validates_acceptance_of snippet.validates_acceptance_of-if [snippet.validates_associated-(va)] [snippet.validates_associated-if-(vaif)] [snippet.validates_confirmation_of-(vc)] [snippet.validates_confirmation_of-if-(vcif)] [snippet.validates_exclusion_of-(ve)] [snippet.validates_exclusion_of-if-(veif)] snippet.validates_inclusion_of snippet.validates_inclusion_of-if snippet.validates_format_of snippet.validates_format_of-if [snippet.validates_length_of-(vl)] snippet.validates_length_of-if snippet.validates_numericality_of snippet.validates_numericality_of-if [snippet.validates_presence_of-(vp)] [snippet.validates_presence_of-if-(vpif)-2] [snippet.validates_uniqueness_of-(vu)] [snippet.validates_uniqueness_of-if-(vuif)]))
+    (submenu Controllers
+        snippet.create-controller-class
+        snippet.rails-flash
+        (submenu respond_to [snippet.respond_to-(html)] snippet.respond_to snippet.wants_format)
+        (submenu redirect_to [snippet.redirect_to-(path)] [snippet.redirect_to-(path-plural)] [snippet.redirect_to-(nested-path)] [snippet.redirect_to-(nested-path-plural)] snippet.rea snippet.reai snippet.rec snippet.reca snippet.recai)
+        (submenu render [snippet.render-(action)...-(ra)] [snippet.render-(action,layout)-(ral)] [snippet.render-(file)-(rf)] [snippet.render-(file,use_full_path)-(rfu)] [snippet.render-(inline)-(ri)] [snippet.render-(inline,locals)-(ril)] [snippet.render-(inline,type)-(rit)] [snippet.render-(layout)-(rl)] [snippet.render-(nothing)-(rn)] [snippet.render-(nothing,status)-(rns)] [snippet.render-(partial)-(rp)] [snippet.render-(partial,collection)-(rpc)] [snippet.render-(partial,locals)-(rpl)] [snippet.render-(partial,object)-(rpo)] [snippet.render-(partial,status)-(rps)] [snippet.render-(text)-(rt)] [snippet.render-(text,layout)-(rtl)] [snippet.render-(text,layout=%3etrue)-(rtlt)] [snippet.render-(text,status)-(rts)] [snippet.render-(update)])
+        (submenu [REST methods] snippet.def-create---resource)
+        ---
+        [snippet.verify-(verify)]
+        [snippet.verify---redirect-(verify)])
+    (submenu [ERb Templates]
+        command.make-selection-in-to-partial
+        ---
+        snippet.form_for
+        snippet.form_for-with-errors
+        (submenu [form_for f. drop-down list] snippet.form_for-label snippet.form_for-text_field snippet.form_for-text_area snippet.form_for-checkbox snippet.form_for-radio_box snippet.form_for-password_field snippet.form_for-hidden_field snippet.form_for-file_field snippet.form_for-submit)
+        (submenu [form_for helpers] snippet.form_for-label-2 snippet.form_for-text_field-2 snippet.form_for-text_area-2 snippet.form_for-check_box snippet.form_for-radio_box-2 snippet.form_for-password_field-2 snippet.form_for-hidden_field-2 snippet.form_for-file_field-2 snippet.form_for-submit-2)
+        ---
+        snippet.180-rails-form_tag
+        snippet.submit_tag
+        snippet.image_submit_tag
+        (submenu link_to [snippet.link_to-(path)] [snippet.link_to-(path-plural)] [snippet.link_to-(nested-path)] [snippet.link_to-(nested-path-plural)] snippet.lia snippet.liai snippet.lic snippet.lica snippet.licai snippet.link_to-model)
+        snippet.end
+        ---
+        [snippet.map(&%3asym_proc)]
+        ---
+        snippet.for-loop-erb)
+    (submenu Layouts snippet.javascript_include_tag snippet.stylesheet_link_tag)
+    (submenu RJS [snippet.page_replace-(id,-partial)] [snippet.page_hide-(%2aids)] [snippet.page_replace_html-(id,-partial)] [snippet.page_insert_html-(position,-id,-partial)] [snippet.page_visual_effect-(effect,-id)] [snippet.page_show-(%2aids)] [snippet.page_toggle-(%2aids)])
+    (submenu Migrations
+        command.generate-quick-migration
+        ---
+        (submenu Columns [snippet.migration-remove-and-add-column-(mrac)])
+        (submenu Tables
+            [snippet.migration-drop-create-table-(mdct)]
+            ---
+            (submenu [Create columns t. drop-down list] [snippet.t_string-(tcs)] [snippet.t_text-(tct)] [snippet.t_integer-(tci)] [snippet.t_float-(tcf)] [snippet.t_decimal-(tcd)] [snippet.t_datetime-(tcdt)] [snippet.t_timestamp-(tcts)] [snippet.t_time-(tcti)] [snippet.t_date-(tcda)] [snippet.t_boolean-(tcb)] [snippet.t_binary-(tcbi)] [snippet.t_timestamps-(tctss)] [snippet.t_lock_version-(tcl)] [snippet.t_references-(tcr)])
+            (submenu [Create columns helpers] snippet.create-string-column snippet.create-text-column snippet.create-integer-column snippet.create-float-column snippet.create-decimal-column snippet.create-datetime-column snippet.create-timestamp-column snippet.create-time-column snippet.create-date-column snippet.create-boolean-column snippet.create-binary-column snippet.create-timestamps-columns snippet.create-lock_version-column snippet.create-references-column)
+            [snippet.migration-create-column-(mcc)]
+            [snippet.migration-create-column-continue-(mccc)]
+            (submenu [Change columns t. drop-down list] [snippet.t_rename-(tre)])
+            (submenu [Change columns helpers] [snippet.table-column(s)-rename])))
+    (submenu Routes snippet.map_named_route snippet.map_resources snippet.map_resource snippet.map_with_options snippet.map_catch_all)
+    (submenu ActiveSupport snippet.cattr_accessor snippet.mattr_accessor snippet.returning-do-%7cvariable%7c-%e2%80%a6-end)
+    (submenu Fixtures snippet.$label [snippet.%3c%=-fixtures_identify(%3asymbol)-%%3e] --- command.autocomplete-foreign-key-fixture-reference [command.autocomplete-foreign-key-fixture-reference-(habtm)])
+    (submenu [Unit Tests] snippet.assert_difference snippet.assert_no_difference ---)
+    (submenu [Functional Tests] snippet.create-functional-test-class snippet.def-get-request snippet.def-post-request --- [snippet.test-assert-response-(are)] [snippet.test-assert-redirected-to-(art)] [snippet.assert_redirected_to-(path)] [snippet.assert_redirected_to-(path-plural)] [snippet.assert_redirected_to-(nested-path)] [snippet.assert_redirected_to-(nested-path-plural)] --- snippet.assert_select --- snippet.assert_rjs --- [snippet.assert(var-=-assigns(%3avar))])
+    (submenu [Ajax Tests] snippet.xhr-post snippet.xhr-get snippet.xhr-delete snippet.xhr-put))

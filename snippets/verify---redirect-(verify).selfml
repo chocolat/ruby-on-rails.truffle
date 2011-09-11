@@ -1,0 +1,9 @@
+(name [verify — redirect])
+
+(trigger
+    (tab verify))
+
+(only-in source.ruby.rails)
+
+(snippet [verify :only => [:%{1}], :session => :user, :params => :id, :redirect_to => {:action => '%{2="index"}'}
+])

@@ -1,0 +1,8 @@
+(name [render (inline)])
+
+(trigger
+    (tab ri))
+
+(only-in source.ruby.rails)
+
+(snippet [render :inline => "%{1="<%= 'hello' %>"}"])

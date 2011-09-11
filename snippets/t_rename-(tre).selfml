@@ -1,0 +1,9 @@
+(name [t.rename (tre)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.rename(:%{1="old_column_name"}, :%{2="new_column_name"})
+t.%{0}])

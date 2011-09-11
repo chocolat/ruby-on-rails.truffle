@@ -1,0 +1,2 @@
+(root source.ruby.rails.rjs
+    (include source.ruby))

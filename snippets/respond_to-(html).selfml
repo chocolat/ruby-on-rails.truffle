@@ -1,0 +1,13 @@
+(name [respond_to (html)])
+
+(trigger
+    (key [[shift][cmd]H]))
+
+(only-in meta.rails.controller)
+
+(snippet [respond_to do |wants|
+	wants.html do
+		%{TM_SELECTED_TEXT}
+	end
+	wants.%{1="js"} { %{0} }
+end])

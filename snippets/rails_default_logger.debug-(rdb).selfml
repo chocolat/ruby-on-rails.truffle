@@ -1,0 +1,8 @@
+(name RAILS_DEFAULT_LOGGER.debug)
+
+(trigger
+    (tab rdb))
+
+(only-in source.ruby.rails)
+
+(snippet [RAILS_DEFAULT_LOGGER.debug "%{1="message"}"%{0}])

@@ -1,0 +1,8 @@
+(name cattr_accessor)
+
+(trigger
+    (tab crw))
+
+(only-in source.ruby.rails)
+
+(snippet [cattr_accessor :%{0="attr_names"}])

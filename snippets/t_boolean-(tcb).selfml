@@ -1,0 +1,9 @@
+(name [t.boolean (tcb)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.boolean :%{1="title"}
+t.%{0}])

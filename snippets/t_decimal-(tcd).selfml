@@ -1,0 +1,9 @@
+(name [t.decimal (tcd)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.decimal :%{1="title"}%{2="%{3=", :precision => %{4="10"}"}%{5=", :scale => %{6="2"}"}"}
+t.%{0}])

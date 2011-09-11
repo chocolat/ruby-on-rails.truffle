@@ -1,0 +1,8 @@
+(name [render (partial, collection)])
+
+(trigger
+    (tab rpc))
+
+(only-in source.ruby.rails)
+
+(snippet [render :partial => "%{1="item"}", :collection => %{2="@%{1}s"}])

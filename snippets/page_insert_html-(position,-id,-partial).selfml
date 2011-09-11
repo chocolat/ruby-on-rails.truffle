@@ -1,0 +1,8 @@
+(name [page.insert_html (position, id, partial)])
+
+(trigger
+    (tab ins))
+
+(only-in source.ruby.rails.rjs)
+
+(snippet [page.insert_html :%{1="top"}, %{2=""%{3="id"}""}, :%{4="partial => "%{5="template"}""}])

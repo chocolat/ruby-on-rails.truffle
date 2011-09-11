@@ -1,0 +1,8 @@
+(name after_update)
+
+(trigger
+    (tab aftu))
+
+(only-in source.ruby.rails)
+
+(snippet [after_update ])

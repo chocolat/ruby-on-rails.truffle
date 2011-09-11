@@ -1,0 +1,8 @@
+(name [xhr get])
+
+(trigger
+    (tab xget))
+
+(only-in source.ruby.rails)
+
+(snippet [xhr :get, :%{1="show"}%{2=", :id => %{3="1"}"}%{0}])

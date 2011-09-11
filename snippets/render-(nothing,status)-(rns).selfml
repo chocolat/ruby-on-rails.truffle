@@ -1,0 +1,8 @@
+(name [render (nothing, status)])
+
+(trigger
+    (tab rns))
+
+(only-in source.ruby.rails)
+
+(snippet [render :nothing => %{1="true"}, :status => %{2="401"}])

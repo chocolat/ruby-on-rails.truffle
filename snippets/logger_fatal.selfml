@@ -1,0 +1,8 @@
+(name logger.fatal)
+
+(trigger
+    (tab logf))
+
+(only-in source.ruby.rails)
+
+(snippet [logger.fatal { "%{1="message"}" }%{0}])

@@ -1,0 +1,8 @@
+(name [flash[…]])
+
+(trigger
+    (tab flash))
+
+(only-in source.ruby.rails)
+
+(snippet [flash[:%{1="notice"}] = "%{2="Successfully created..."}"%{0}])

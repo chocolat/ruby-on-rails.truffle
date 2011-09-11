@@ -1,0 +1,8 @@
+(name javascript_include_tag)
+
+(trigger
+    (tab jit))
+
+(only-in text.html.ruby)
+
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_EXPR}javascript_include_tag %{1=":all"}%{2=", :cache => %{3="true"}"}%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}])

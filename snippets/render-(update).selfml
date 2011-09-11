@@ -1,0 +1,10 @@
+(name [render (update)])
+
+(trigger
+    (tab ru))
+
+(only-in source.ruby.rails)
+
+(snippet [render :update do |%{2="page"}|
+	%{2}.%{0}
+end])

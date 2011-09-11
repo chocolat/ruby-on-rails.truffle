@@ -1,0 +1,8 @@
+(name logger.debug)
+
+(trigger
+    (tab logd))
+
+(only-in source.ruby.rails)
+
+(snippet [logger.debug { "%{1="message"}" }%{0}])

@@ -1,0 +1,10 @@
+(name assert_difference)
+
+(trigger
+    (tab asd))
+
+(only-in source.ruby)
+
+(snippet [assert_difference "%{1="Model"}.%{2="count"}", %{3="1"} do
+  %{0}
+end])

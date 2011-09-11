@@ -1,0 +1,8 @@
+(name [map(&:sym_proc)])
+
+(trigger
+    (tab mp))
+
+(only-in source.ruby.rails)
+
+(snippet [map(&:%{1="id"})])

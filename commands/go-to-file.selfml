@@ -1,0 +1,15 @@
+(trigger
+    (key [[alt][cmd][down]]))
+
+(name [Alternate File])
+
+(only-in [source.ruby.rails, text.html.ruby, source.ruby.rails.embedded.html, source.yaml, text.haml, source.css, source.js, source.sass])
+
+(input nothing)
+
+(output tooltip)
+
+(save file)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/go_to_alternate_file.rb"])

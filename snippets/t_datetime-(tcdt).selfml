@@ -1,0 +1,9 @@
+(name [t.datetime (tcdt)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.datetime :%{1="title"}
+t.%{0}])

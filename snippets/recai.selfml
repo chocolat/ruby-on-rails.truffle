@@ -1,0 +1,8 @@
+(name [redirect_to (controller, action, id)])
+
+(trigger
+    (tab recai))
+
+(only-in source.ruby.rails)
+
+(snippet [redirect_to :controller => "%{1="items"}", :action => "%{2="show"}", :id => %{0="@item"}])

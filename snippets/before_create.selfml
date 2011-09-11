@@ -1,0 +1,8 @@
+(name before_create)
+
+(trigger
+    (tab befc))
+
+(only-in source.ruby.rails)
+
+(snippet [before_create ])

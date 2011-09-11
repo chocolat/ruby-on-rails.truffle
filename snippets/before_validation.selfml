@@ -1,0 +1,8 @@
+(name before_validation)
+
+(trigger
+    (tab befv))
+
+(only-in source.ruby.rails)
+
+(snippet [before_validation ])

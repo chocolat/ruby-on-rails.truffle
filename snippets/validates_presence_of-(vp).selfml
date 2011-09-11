@@ -1,0 +1,8 @@
+(name validates_presence_of)
+
+(trigger
+    (tab vp))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_presence_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => "%{4="can't be blank"}""}])

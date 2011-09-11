@@ -1,0 +1,8 @@
+(name before_destroy)
+
+(trigger
+    (tab befd))
+
+(only-in source.ruby.rails)
+
+(snippet [before_destroy ])

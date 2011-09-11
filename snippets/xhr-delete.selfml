@@ -1,0 +1,8 @@
+(name [xhr delete])
+
+(trigger
+    (tab xdelete))
+
+(only-in source.ruby.rails)
+
+(snippet [xhr :delete, :%{1="destroy"}, :id => %{2="1"}%{0}])

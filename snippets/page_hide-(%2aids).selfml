@@ -1,0 +1,8 @@
+(name [page.hide (*ids)])
+
+(trigger
+    (tab hide))
+
+(only-in source.ruby.rails.rjs)
+
+(snippet [page.hide %{1=""%{2="id(s)"}""}])

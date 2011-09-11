@@ -1,0 +1,8 @@
+(name logger.warn)
+
+(trigger
+    (tab logw))
+
+(only-in source.ruby.rails)
+
+(snippet [logger.warn { "%{1="message"}" }%{0}])

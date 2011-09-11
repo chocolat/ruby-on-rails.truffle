@@ -1,0 +1,16 @@
+(trigger
+    (key [[ctrl][shift][cmd]S]))
+
+(name [Show DB Schema for Current Class])
+
+(only-in source.ruby.rails)
+
+(input nothing)
+
+(output tooltip)
+
+(save nothing)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/show_schema.rb"
+])

@@ -1,0 +1,8 @@
+(name [render (action)])
+
+(trigger
+    (tab ra))
+
+(only-in source.ruby.rails)
+
+(snippet [render :action => "%{1="action"}"])

@@ -1,0 +1,15 @@
+(trigger
+    (key [[alt][shift][esc]]))
+
+(name [Autocomplete Foreign Key Fixture Reference (habtm)])
+
+(only-in source.yaml)
+
+(input selection line)
+
+(output snippet)
+
+(save nothing)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" "${TM_BUNDLE_SUPPORT}/bin/fixture_auto_complete.rb" preserve])

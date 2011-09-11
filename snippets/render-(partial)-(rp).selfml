@@ -1,0 +1,8 @@
+(name [render (partial)])
+
+(trigger
+    (tab rp))
+
+(only-in source.ruby.rails)
+
+(snippet [render :partial => "%{1="item"}"])

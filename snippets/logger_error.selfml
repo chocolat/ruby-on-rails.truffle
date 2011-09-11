@@ -1,0 +1,8 @@
+(name logger.error)
+
+(trigger
+    (tab loge))
+
+(only-in source.ruby.rails)
+
+(snippet [logger.error { "%{1="message"}" }%{0}])

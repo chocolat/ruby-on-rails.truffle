@@ -1,0 +1,8 @@
+(name after_create)
+
+(trigger
+    (tab aftc))
+
+(only-in source.ruby.rails)
+
+(snippet [after_create ])

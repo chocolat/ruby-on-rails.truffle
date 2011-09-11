@@ -1,0 +1,8 @@
+(name after_validation_on_update)
+
+(trigger
+    (tab aftvou))
+
+(only-in source.ruby.rails)
+
+(snippet [after_validation_on_update ])

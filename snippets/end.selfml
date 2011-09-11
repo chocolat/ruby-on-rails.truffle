@@ -1,0 +1,8 @@
+(name [end (ERB)])
+
+(trigger
+    (tab end))
+
+(only-in text.html.ruby)
+
+(snippet [<% end -%>])

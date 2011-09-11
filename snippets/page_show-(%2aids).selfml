@@ -1,0 +1,8 @@
+(name [page.show (*ids)])
+
+(trigger
+    (tab show))
+
+(only-in source.ruby.rails.rjs)
+
+(snippet [page.show %{1=""%{2="id(s)"}""}])

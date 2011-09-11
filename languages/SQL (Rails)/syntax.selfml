@@ -1,0 +1,11 @@
+(root source.sql.ruby
+    (zone source.ruby.rails.embedded.sql
+        (start
+            (regex [<%+(?!>)=?]))
+        (end %>)
+        (subzones
+            (zone comment.line.number-sign.ruby
+                (match
+                    (regex [#.*?(?=%>)])))
+            (include source.ruby.rails)))
+    (include source.sql))

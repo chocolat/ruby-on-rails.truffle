@@ -1,0 +1,9 @@
+(name [t.binary (tcbi)])
+
+(trigger
+    (tab t.))
+
+(only-in [meta.rails.migration.create_table, meta.rails.migration.change_table])
+
+(snippet [t.binary :%{1="title"}%{2=", :limit => %{3="2"}.megabytes"}
+t.%{0}])

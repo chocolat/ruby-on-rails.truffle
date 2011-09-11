@@ -1,0 +1,8 @@
+(name [validates_confirmation_of if])
+
+(trigger
+    (tab vcif))
+
+(only-in source.ruby.rails)
+
+(snippet [validates_confirmation_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => "%{4="should match confirmation"}", :if => proc { |obj| %{5="obj.condition?"} "}}])

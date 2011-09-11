@@ -1,0 +1,8 @@
+(name [redirect_to (path plural)])
+
+(trigger
+    (tab repp))
+
+(only-in source.ruby.rails)
+
+(snippet [redirect_to(%{2="%{10="model"}s_path"})])

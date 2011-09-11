@@ -1,0 +1,8 @@
+(name [render (layout)])
+
+(trigger
+    (tab rl))
+
+(only-in source.ruby.rails)
+
+(snippet [render :layout => "%{1="layoutname"}"])

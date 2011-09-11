@@ -1,0 +1,8 @@
+(name before_update)
+
+(trigger
+    (tab befu))
+
+(only-in source.ruby.rails)
+
+(snippet [before_update ])

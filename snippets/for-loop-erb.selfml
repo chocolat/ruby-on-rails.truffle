@@ -1,0 +1,15 @@
+(name [for loop in rhtml])
+
+(trigger
+    (tab for))
+
+(only-in text.html.ruby)
+
+(snippet [<% if !%{1="list"}.blank? %>
+  <% for %{2="item"} in %{1} %>
+    %{3}
+  <% end %>
+<% else %>
+  %{4}
+<% end %>
+])

@@ -1,0 +1,8 @@
+(name mattr_accessor)
+
+(trigger
+    (tab mrw))
+
+(only-in source.ruby.rails)
+
+(snippet [mattr_accessor :%{0="attr_names"}])

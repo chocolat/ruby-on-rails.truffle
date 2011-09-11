@@ -1,0 +1,8 @@
+(name [Drop / Create Table])
+
+(trigger
+    (tab mtab))
+
+(only-in [meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table])
+
+(snippet [drop_table :%{1="table"}%{2=" [press tab twice to generate create_table]"}])

@@ -1,0 +1,8 @@
+(name [render (inline, type)])
+
+(trigger
+    (tab rit))
+
+(only-in source.ruby.rails)
+
+(snippet [render :inline => "%{1="<%= 'hello' %>"}", :type => %{2=":rxml"}])

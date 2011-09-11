@@ -1,0 +1,8 @@
+(name [redirect_to (nested path plural)])
+
+(trigger
+    (tab renpp))
+
+(only-in source.ruby.rails)
+
+(snippet [redirect_to(%{2="%{10="parent"}_%{11="child"}_path(%{12="@"}%{13="%{10}"})"})])

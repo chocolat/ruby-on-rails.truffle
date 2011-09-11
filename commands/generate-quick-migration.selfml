@@ -1,0 +1,15 @@
+(trigger
+    (key [[ctrl][shift]M]))
+
+(name [Quick Migration])
+
+(only-in [source.ruby.rails, source.yaml, text.html.ruby])
+
+(input nothing word)
+
+(output nothing)
+
+(save nothing)
+
+(script [RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/generate_quick_migration.rb"])

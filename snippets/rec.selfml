@@ -1,0 +1,8 @@
+(name [redirect_to (controller)])
+
+(trigger
+    (tab rec))
+
+(only-in source.ruby.rails)
+
+(snippet [redirect_to :controller => "%{1="items"}"])
