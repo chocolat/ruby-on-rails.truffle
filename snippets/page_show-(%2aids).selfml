@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails.rjs)
 
-(snippet [page.show %{1=""%{2="id(s)"}""}])
+(snippet [page.show %{1="\"%{2="id(s)"}\""}])

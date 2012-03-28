@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails)
 
-(snippet [assert_redirected_to %{2=":action => "%{1="index"}""}])
+(snippet [assert_redirected_to %{2=":action => \"%{1="index"}\""}])

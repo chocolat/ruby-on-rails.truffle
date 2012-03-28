@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails)
 
-(snippet [has_one :%{1="object"}%{2=", :class_name => "%{3="%{1/[[:alpha:]]+|(_)/(?1::\u$0)/g}"}", :foreign_key => "%{4="%{1}_id"}""}])
+(snippet [has_one :%{1="object"}%{2=", :class_name => \"%{3="%{1/[[:alpha:]]+|(_)/(?1::\u$0)/g}"}\", :foreign_key => \"%{4="%{1}_id"}\""}])

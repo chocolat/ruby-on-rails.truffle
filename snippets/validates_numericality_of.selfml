@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails)
 
-(snippet [validates_numericality_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => "%{4="is not a number"}""}])
+(snippet [validates_numericality_of :%{1="attribute"}%{2=", :on => :%{3="create"}, :message => \"%{4="is not a number"}\""}])

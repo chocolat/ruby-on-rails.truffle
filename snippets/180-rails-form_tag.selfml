@@ -5,6 +5,6 @@
 
 (only-in [text.html.ruby, text.haml])
 
-(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_tag(%{1=":action => "%{5="update"}""}%{6=", {:%{8="class"} => "%{9="form"}"\"}}) do%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+(snippet [%{TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_tag(%{1=":action => \"%{5="update"}\""}%{6=", {:%{8="class"} => \"%{9="form"}\"\\"}}) do%{TM_RAILS_TEMPLATE_END_RUBY_EXPR}
   %{0}
 %{TM_RAILS_TEMPLATE_END_RUBY_BLOCK}])

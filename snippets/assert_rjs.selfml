@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails)
 
-(snippet [assert_rjs :%{1="replace"}, %{2=""%{3="dom id"}""}])
+(snippet [assert_rjs :%{1="replace"}, %{2="\"%{3="dom id"}\""}])

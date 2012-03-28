@@ -5,4 +5,4 @@
 
 (only-in meta.rails.controller)
 
-(snippet [wants.%{1="js|xml|html"}%{2=" { %{0} \"}}])
+(snippet [wants.%{1="js|xml|html"}%{2=" { %{0} \\"}}])

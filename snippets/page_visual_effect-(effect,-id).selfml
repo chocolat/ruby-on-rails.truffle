@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails.rjs)
 
-(snippet [page.visual_effect :%{1="toggle_slide"}, %{2=""%{3="DOM ID"}""}])
+(snippet [page.visual_effect :%{1="toggle_slide"}, %{2="\"%{3="DOM ID"}\""}])

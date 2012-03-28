@@ -6,5 +6,5 @@
 (only-in meta.rails.controller)
 
 (snippet [respond_to do |wants|
-	wants.%{1="html"}%{2=" { %{0} \"}}
+	wants.%{1="html"}%{2=" { %{0} \\"}}
 end])

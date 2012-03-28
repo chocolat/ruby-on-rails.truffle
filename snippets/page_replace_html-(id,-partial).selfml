@@ -5,4 +5,4 @@
 
 (only-in source.ruby.rails.rjs)
 
-(snippet [page.replace_html %{1=""%{2="id"}""}, :%{3="partial => "%{4="template"}""}])
+(snippet [page.replace_html %{1="\"%{2="id"}\""}, :%{3="partial => \"%{4="template"}\""}])
