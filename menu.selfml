@@ -1,17 +1,8 @@
-(menu
-    (submenu [Go To] command.go-to-file command.go-to-file-on-this-line --- command.go-to-model command.go-to-alternate-file command.go-to-view command.go-to-functional-test command.go-to-helper command.go-to-javascript command.go-to-stylesheet command.go-to-unit-test command.go-to-fixture)
-    (submenu [Run Tests] command.test-all command.test-functionals command.test-integration command.test-plugins command.test-recent command.test-uncommitted command.test-units)
-    command.generate
-    command.install-bundled-plugin
-    (submenu Database command.rake-migrate command.rake-migrate-to-version command.migrate-to-previous-version command.redo-last-migration --- command.load-fixtures [command.load-fixtures-(test-db)] --- command.db-schema-import command.db-schema-dump command.clone-development-db-to-test-db)
-    ---
-    snippet.rails-params
+(menu snippet.rails-params
     snippet.rails-session
     (submenu Logger snippet.logger_debug snippet.logger_info snippet.logger_warn snippet.logger_error snippet.logger_fatal [snippet.rails_default_logger.debug-(rdb)])
     ---
     (submenu Models
-        command.show-db-schema
-        ---
         (submenu Callbacks snippet.before_validation snippet.before_validation_on_create snippet.before_validation_on_update snippet.after_validation snippet.after_validation_on_create snippet.after_validation_on_update snippet.before_save snippet.after_save snippet.before_create snippet.after_create snippet.before_destroy snippet.after_update snippet.before_update snippet.after_destroy)
         (submenu Associations [snippet.belongs_to-(bt)] [snippet.has_and_belongs_to_many-(habtm)] [snippet.has_one-(ho)] [snippet.has_many-(hm)] snippet.has_many-dependent-=>-destroy [snippet.has_many-(through)] snippet.has_many-dependent-=>-destroy)
         (submenu Scopes snippet.named_scope snippet.named_scope-lambda)
@@ -28,8 +19,6 @@
         [snippet.verify-(verify)]
         [snippet.verify---redirect-(verify)])
     (submenu [ERb Templates]
-        command.make-selection-in-to-partial
-        ---
         snippet.form_for
         snippet.form_for-with-errors
         (submenu [form_for f. drop-down list] snippet.form_for-label snippet.form_for-text_field snippet.form_for-text_area snippet.form_for-checkbox snippet.form_for-radio_box snippet.form_for-password_field snippet.form_for-hidden_field snippet.form_for-file_field snippet.form_for-submit)
@@ -47,8 +36,6 @@
     (submenu Layouts snippet.javascript_include_tag snippet.stylesheet_link_tag)
     (submenu RJS [snippet.page_replace-(id,-partial)] [snippet.page_hide-(%2aids)] [snippet.page_replace_html-(id,-partial)] [snippet.page_insert_html-(position,-id,-partial)] [snippet.page_visual_effect-(effect,-id)] [snippet.page_show-(%2aids)] [snippet.page_toggle-(%2aids)])
     (submenu Migrations
-        command.generate-quick-migration
-        ---
         (submenu Columns [snippet.migration-remove-and-add-column-(mrac)])
         (submenu Tables
             [snippet.migration-drop-create-table-(mdct)]
@@ -61,7 +48,7 @@
             (submenu [Change columns helpers] [snippet.table-column(s)-rename])))
     (submenu Routes snippet.map_named_route snippet.map_resources snippet.map_resource snippet.map_with_options snippet.map_catch_all)
     (submenu ActiveSupport snippet.cattr_accessor snippet.mattr_accessor snippet.returning-do-%7cvariable%7c-%e2%80%a6-end)
-    (submenu Fixtures snippet.$label [snippet.%3c%=-fixtures_identify(%3asymbol)-%%3e] --- command.autocomplete-foreign-key-fixture-reference [command.autocomplete-foreign-key-fixture-reference-(habtm)])
+    (submenu Fixtures snippet.$label [snippet.%3c%=-fixtures_identify(%3asymbol)-%%3e] ---)
     (submenu [Unit Tests] snippet.assert_difference snippet.assert_no_difference ---)
     (submenu [Functional Tests] snippet.create-functional-test-class snippet.def-get-request snippet.def-post-request --- [snippet.test-assert-response-(are)] [snippet.test-assert-redirected-to-(art)] [snippet.assert_redirected_to-(path)] [snippet.assert_redirected_to-(path-plural)] [snippet.assert_redirected_to-(nested-path)] [snippet.assert_redirected_to-(nested-path-plural)] --- snippet.assert_select --- snippet.assert_rjs --- [snippet.assert(var-=-assigns(%3avar))])
     (submenu [Ajax Tests] snippet.xhr-post snippet.xhr-get snippet.xhr-delete snippet.xhr-put))
